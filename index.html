@@ -297,6 +297,23 @@
             justify-content: center;
             font-size: 3rem;
             color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-image-placeholder {
+            font-size: 3rem;
         }
 
         .project-content {
@@ -554,7 +571,9 @@
         <h2 class="section-title">Projetos</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">🚀</div>
+                <div class="project-image">
+                    <img src="NextLevel.png" alt="NextLevelTech">
+                </div>
                 <div class="project-content">
                     <h3>NextLevelTech - TCC</h3>
                     <p>Projeto de Trabalho de Conclusão de Curso focado em inovação tecnológica desenvolvido na 4ª fase.</p>
@@ -570,7 +589,9 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">📚</div>
+                <div class="project-image">
+                    <img src="BookHub.png" alt="Sistema Livraria">
+                </div>
                 <div class="project-content">
                     <h3>Sistema Livraria</h3>
                     <p>Sistema completo de gerenciamento de livraria com interface visual intuitiva e backend em Python desenvolvido na 3ª fase.</p>
@@ -586,7 +607,9 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">👟</div>
+                <div class="project-image">
+                    <img src="Academia.png" alt="MxK Sneakers">
+                </div>
                 <div class="project-content">
                     <h3>MxK Sneakers</h3>
                     <p>E-commerce completo de tênis com interface visual atraente desenvolvido em Java com front-end moderno como projeto pessoal.</p>
@@ -602,7 +625,9 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">🍕</div>
+                <div class="project-image">
+                    <img src="DinoPizzaria.png" alt="Dino Pizza">
+                </div>
                 <div class="project-content">
                     <h3>Dino Pizza Delivery</h3>
                     <p>Site responsivo para pizzaria com cardápio, sistema de pedidos e integração com redes sociais.</p>
@@ -618,7 +643,9 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">🎵</div>
+                <div class="project-image">
+                    <img src="Hungria.png" alt="Hungria Hip Hop">
+                </div>
                 <div class="project-content">
                     <h3>Site do Hungria Hip Hop</h3>
                     <p>Portfólio musical completo com agenda de shows, discografia e galeria de fotos totalmente responsivo.</p>
@@ -634,7 +661,9 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">💼</div>
+                <div class="project-image">
+                    <div class="project-image-placeholder">💼</div>
+                </div>
                 <div class="project-content">
                     <h3>Todos os Projetos SATC</h3>
                     <p>Repositório completo com todos os projetos desenvolvidos durante o curso técnico em Informática.</p>
